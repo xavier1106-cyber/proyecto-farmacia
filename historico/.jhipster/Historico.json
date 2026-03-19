@@ -1,0 +1,77 @@
+{
+  "annotations": {
+    "changelogDate": "20260303035752"
+  },
+  "applications": "*",
+  "clientRootFolder": "historico",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "fechaEmision",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "folio",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pacienteId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pacienteNombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pacienteCurp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "medicoId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "medicoNombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "medicoEspecialidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "usuarioQueRegistro",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "medicamentos",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "autorizo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "observaciones",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Integer"
+    }
+  ],
+  "microserviceName": "historico",
+  "name": "Historico",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,26 @@
+entity MovimientoInventario {
+
+    tipoMovimiento TipoMovimiento required,
+
+    cantidad Integer required min(1),
+
+    fecha LocalDate required,
+
+    observacion String maxlength(250)
+
+}
+
+enum TipoMovimiento {
+    ENTRADA,
+    SALIDA,
+    AJUSTE,
+    CADUCADO
+}
+
+relationship ManyToOne {
+    MovimientoInventario{inventario(nombre)} to Inventario with builtInEntity
+}
+
+paginate MovimientoInventario with pagination
+dto MovimientoInventario with mapstruct
+service MovimientoInventario with serviceImpl

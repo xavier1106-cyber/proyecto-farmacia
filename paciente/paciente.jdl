@@ -1,0 +1,12 @@
+entity Paciente {
+
+    curp String required minlength(18) maxlength(18),
+    nombre String required minlength(2) maxlength(100),
+    fechaNacimiento LocalDate required,
+    sexo String required minlength(1) maxlength(20),
+    numeroSeguroSocial String minlength(8) maxlength(20),
+
+}
+paginate Paciente with pagination
+dto Paciente with mapstruct
+service Paciente with serviceImpl

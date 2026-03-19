@@ -1,0 +1,40 @@
+{
+  "gatewayApp": {
+    "historicoHistorico": {
+      "home": {
+        "title": "Historicos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Historico",
+        "createOrEditLabel": "Crear o editar Historico",
+        "notFound": "Ningún Historicos encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Historico { id }?"
+      },
+      "detail": {
+        "title": "Historico"
+      },
+      "id": "ID",
+      "fechaEmision": "Fecha Emision",
+      "folio": "Folio",
+      "pacienteId": "Paciente Id",
+      "pacienteNombre": "Paciente Nombre",
+      "pacienteCurp": "Paciente Curp",
+      "medicoId": "Medico Id",
+      "medicoNombre": "Medico Nombre",
+      "medicoEspecialidad": "Medico Especialidad",
+      "usuarioQueRegistro": "Usuario Que Registro",
+      "medicamentos": "Medicamentos",
+      "autorizo": "Autorizo",
+      "observaciones": "Observaciones",
+      "cantidad": "Cantidad"
+    }
+  },
+  "historicoApp": {
+    "historicoHistorico": {
+      "created": "Un nuevo Historico ha sido creado con el identificador { param }",
+      "updated": "Un Historico ha sido actualizado con el identificador { param }",
+      "deleted": "Un Historico ha sido eliminado con el identificador { param }"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "annotations": {
+    "changelogDate": "20260316221149"
+  },
+  "applications": "*",
+  "clientRootFolder": "inventario",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "tipoMovimiento",
+      "fieldType": "TipoMovimiento",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ENTRADA,SALIDA,AJUSTE,CADUCADO"
+    },
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "observacion",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "250"
+    }
+  ],
+  "microserviceName": "inventario",
+  "name": "MovimientoInventario",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "inventario",
+      "relationshipName": "inventario",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

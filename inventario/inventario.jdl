@@ -1,0 +1,26 @@
+entity Inventario{
+
+    claveMedicamento String required minlength(3) maxlength(50),
+
+    nombre String required minlength(3) maxlength(150),
+
+    presentacion String required minlength(3) maxlength(100),
+
+    lote String required minlength(2) maxlength(50),
+
+    cantidad Integer required min(0),
+
+    cantidadMinima Integer required min(0),
+
+    fechaCaducidad LocalDate required,
+
+    ubicacion String required minlength(3) maxlength(100),
+
+    controlado Boolean required
+}
+
+paginate Inventario with pagination
+dto Inventario with mapstruct
+service Inventario with serviceImpl
+
+

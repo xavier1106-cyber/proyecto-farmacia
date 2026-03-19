@@ -1,0 +1,32 @@
+{
+  "gatewayApp": {
+    "inventarioMovimientoInventario": {
+      "home": {
+        "title": "Movimiento Inventarios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Movimiento Inventario",
+        "createOrEditLabel": "Crear o editar Movimiento Inventario",
+        "notFound": "Ningún Movimiento Inventarios encontrado"
+      },
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Movimiento Inventario { id }?"
+      },
+      "detail": {
+        "title": "Movimiento Inventario"
+      },
+      "id": "ID",
+      "tipoMovimiento": "Tipo Movimiento",
+      "cantidad": "Cantidad",
+      "fecha": "Fecha",
+      "observacion": "Observacion",
+      "inventario": "Inventario"
+    }
+  },
+  "inventarioApp": {
+    "inventarioMovimientoInventario": {
+      "created": "Un nuevo Movimiento Inventario ha sido creado con el identificador { param }",
+      "updated": "Un Movimiento Inventario ha sido actualizado con el identificador { param }",
+      "deleted": "Un Movimiento Inventario ha sido eliminado con el identificador { param }"
+    }
+  }
+}

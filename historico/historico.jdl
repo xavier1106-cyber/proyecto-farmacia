@@ -1,0 +1,21 @@
+entity Historico {
+    fechaEmision Instant required,
+    folio String required,
+    pacienteId Long required,
+    pacienteNombre String required,
+    pacienteCurp String,
+    medicoId Long required,
+    medicoNombre String,
+    medicoEspecialidad String,
+    usuarioQueRegistro String required,
+    // Guardamos todos los medicamentos como JSON
+    medicamentos TextBlob required,
+    autorizo String,
+    observaciones String,
+    cantidad Integer
+}
+
+// Paginación, DTO y servicio
+paginate Historico with pagination
+dto Historico with mapstruct
+service Historico with serviceImpl
